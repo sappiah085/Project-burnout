@@ -1,222 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="inventory.css" rel="stylesheet">
-    <link rel="icon" type="ico" href="/android-chrome-192x192.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="inventory.css" rel="stylesheet" />
+    <link rel="icon" type="ico" href="/android-chrome-192x192.png" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="main">
-        <div class="side-menu">
-            <div class="brand-logo">
-                <img src="images/logo.jpg" alt="Company logo">
+      <div class="side-menu">
+        <div class="brand-logo">
+          <img src="images/logo.jpg" alt="Company logo" />
+        </div>
+        <br /><br />
+
+        <ul>
+          <li>
+            <a href="Dashboard.html"><span>Dashboard</span></a>
+          </li>
+          <li>
+            <a href="admin.html"><span>Admin Control Panel</span></a>
+          </li>
+          <li>
+            <a href="Inventory.html"><span>Inventory</span></a>
+          </li>
+          <li>
+            <a href="sales.html"><span>Sales</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="right-side"></div>
+      <div class="container">
+        <div class="header">
+          <div class="nav">
+            <div class="search">
+              <input type="text" placeholder="Search.." />
+              <button type="submit">
+                <img src="Icons/search.png" alt="" />
+              </button>
             </div>
-            <br><br>
+            <script>
+              function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+              }
 
-            <ul>
-                <li><a href="Dashboard.html"><span>Dashboard</span></a> </li>
-                <li><a href="admin.html"><span>Admin Control Panel</span></a></li>
-                <li><a href="Inventory.html"><span>Inventory</span></a> </li>
-                <li><a href="sales.html"><span>Sales</span></a> </li>
-            </ul>
-        </div>
-        <div class="right-side">
-
-        </div>
-        <div class="container">
-            <div class="header">
-                <div class="nav">
-                    <div class="search">
-                        <input type="text" placeholder="Search..">
-                        <button type="submit"><img src="Icons/search.png" alt=""></button>
-                    </div>
-                    <script>
-                        function myFunction() {
-                            document.getElementById("myDropdown").classList.toggle("show");
-                        }
-
-                        window.onclick = function(event) {
-                            if (!event.target.matches('.dropbtn')) {
-                                var dropdowns = document.getElementsByClassName("dropdown-content");
-                                var i;
-                                for (i = 0; i < dropdowns.length; i++) {
-                                    var openDropdown = dropdowns[i];
-                                    if (openDropdown.classList.contains('show')) {
-                                        openDropdown.classList.remove('show');
-                                    }
-                                }
-                            }
-                        }
-                    </script>
-                    <div class="user">
-                        <div class="dropdown">
-                            <button onclick="myFunction()" class="dropbtn">Welcome</button>
-                            <div id="myDropdown" class="dropdown-content">
-                                <a href="Login_Page-main/login.html">Sign Out</a>
-                            </div>
-                        </div>
-                        <div class="img-case">
-                            <img src="Icons/admin.png" alt="">
-                        </div>
-                    </div>
+              window.onclick = function (event) {
+                if (!event.target.matches(".dropbtn")) {
+                  var dropdowns =
+                    document.getElementsByClassName("dropdown-content");
+                  var i;
+                  for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains("show")) {
+                      openDropdown.classList.remove("show");
+                    }
+                  }
+                }
+              };
+            </script>
+            <div class="user">
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Welcome</button>
+                <div id="myDropdown" class="dropdown-content">
+                 <a class="sign-out" >Sign Out</a>
                 </div>
+              </div>
+              <div class="img-case">
+                <img src="Icons/admin.png" alt="" />
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
-        <table>
-            <tr>
+      <table>
+        <tr>
+          <th>#</th>
 
-                <th>#</th>
+          <th>TYPE</th>
 
-                <th>TYPE</th>
+          <th>BRAND</th>
 
-                <th>BRAND</th>
+          <th>SERIAL NUMBER</th>
 
-                <th>SERIAL NUMBER</th>
+          <th>DATE</th>
 
-                <th>DATE</th>
+          <th>QUANTITY</th>
+        </tr>
 
-                <th>QUANTITY</th>
+        <tr>
+          <td>1</td>
 
-            </tr>
+          <td>---</td>
 
+          <td>---</td>
 
-            <tr>
+          <td>UJ1368</td>
 
-                <td>1</td>
+          <td>18 Nov 1962</td>
 
-                <td>---</td>
+          <td>50</td>
+        </tr>
 
-                <td>---</td>
+        <tr>
+          <td>2</td>
 
-                <td>UJ1368</td>
+          <td>---</td>
 
-                <td>18 Nov 1962</td>
+          <td>---</td>
 
-                <td>50</td>
+          <td>TG1368</td>
 
-            </tr>
+          <td>18 Dec 1962</td>
 
-            <tr>
+          <td>20</td>
+        </tr>
 
-                <td>2</td>
+        <tr>
+          <td>3</td>
 
-                <td>---</td>
+          <td>---</td>
 
-                <td>---</td>
+          <td>---</td>
 
-                <td>TG1368</td>
+          <td>YF1368</td>
 
-                <td>18 Dec 1962</td>
+          <td>18 Nov 1972</td>
 
-                <td>20</td>
-            </tr>
+          <td>400</td>
+        </tr>
 
-            <tr>
+        <tr>
+          <td>4</td>
 
-                <td>3</td>
+          <td>---</td>
 
-                <td>---</td>
+          <td>---</td>
 
-                <td>---</td>
+          <td>RS1368</td>
 
-                <td>YF1368</td>
+          <td>18 Mar 1982</td>
 
-                <td>18 Nov 1972</td>
+          <td>63</td>
+        </tr>
 
-                <td>400</td>
+        <tr>
+          <td>5</td>
 
-            </tr>
+          <td>---</td>
 
-            <tr>
+          <td>---</td>
 
-                <td>4</td>
+          <td>DX1368</td>
 
-                <td>---</td>
+          <td>18 Mar 1982</td>
 
-                <td>---</td>
+          <td>300</td>
+        </tr>
 
-                <td>RS1368</td>
+        <tr>
+          <td>6</td>
 
-                <td>18 Mar 1982</td>
+          <td>---</td>
 
-                <td>63</td>
+          <td>---</td>
 
-            </tr>
+          <td>JB1368</td>
 
-            <tr>
+          <td>18 Mar 1982</td>
 
-                <td>5</td>
+          <td>75</td>
+        </tr>
 
-                <td>---</td>
+        <tr>
+          <td>7</td>
 
-                <td>---</td>
+          <td>---</td>
 
-                <td>DX1368</td>
+          <td>---</td>
 
-                <td>18 Mar 1982</td>
+          <td>KV1368</td>
 
-                <td>300</td>
+          <td>18 Mar 1982</td>
 
-            </tr>
+          <td>200</td>
+        </tr>
 
-            <tr>
+        <tr>
+          <td>8</td>
 
-                <td>6</td>
+          <td>---</td>
 
-                <td>---</td>
+          <td>---</td>
 
-                <td>---</td>
+          <td>NG1368</td>
 
-                <td>JB1368</td>
+          <td>18 Mar 1982</td>
 
-                <td>18 Mar 1982</td>
-
-                <td>75</td>
-
-            </tr>
-
-            <tr>
-
-                <td>7</td>
-
-                <td>---</td>
-
-                <td>---</td>
-
-                <td>KV1368</td>
-
-                <td>18 Mar 1982</td>
-
-                <td>200</td>
-
-            </tr>
-
-            <tr>
-
-                <td>8</td>
-
-                <td>---</td>
-
-                <td>---</td>
-
-                <td>NG1368</td>
-
-                <td>18 Mar 1982</td>
-
-                <td>40</td>
-
-            </tr>
-
-        </table>
-
+          <td>40</td>
+        </tr>
+      </table>
     </div>
+    <script type="module" defer src="./board.js"></script>
     <script src=".js"></script>
-</body>
-
+  </body>
 </html>
